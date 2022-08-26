@@ -1,7 +1,8 @@
 import './style.css';
-import load from './modules/pageLoad'
+// import load from './modules/pageLoad'
+import createNav from './modules/createNav';
 
-load();
+createNav();
 
 const home = document.getElementById('home')
 const menu = document.getElementById('menu')
