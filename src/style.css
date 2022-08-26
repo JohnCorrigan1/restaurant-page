@@ -2,9 +2,15 @@ body {
     margin: 0;
 }
 
+.main {
+    background: url('./imgs/pizza.jpg');
+    width: 100vw;
+}
+
 .content {
 
 }
+
 
 .nav{
     display: grid;
