@@ -1,30 +1,37 @@
 import './style.css';
-// import load from './modules/pageLoad'
-import createNav from './modules/createNav';
+import createNav from './functions/createNav';
+import loadHome from './pages/homePage';
+import loadMenu from './pages/menuPage';
+import loadContact from './pages/contactPage'
+import removePage from './functions/removePage'
 
 createNav();
+loadHome();
 
 const home = document.getElementById('home')
 const menu = document.getElementById('menu')
 const contact = document.getElementById('contact')
 
 home.addEventListener('click', function(){
+    removePage();
     home.classList.add('current-page')
     menu.classList.remove('current-page')
     contact.classList.remove('current-page')
-    //call load home page
+    loadHome();
 })
 
 menu.addEventListener('click', function(){
+    removePage();
     menu.classList.add('current-page')
     home.classList.remove('current-page')
     contact.classList.remove('current-page')
-    //call load menu page
+    loadMenu();
 })
 
 contact.addEventListener('click', function(){
+    removePage();
     contact.classList.add('current-page')
     home.classList.remove('current-page')
     menu.classList.remove('current-page')
-    //call load contact page
+    loadContact();
 })

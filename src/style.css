@@ -3,8 +3,7 @@ body {
 }
 
 .content {
-    display: flex;
-    justify-content: center;
+
 }
 
 .nav{
@@ -13,7 +12,7 @@ body {
     gap: 10px;
     padding: 20px;
     height: 5vh;
-    width: 100vw;
+    min-width: 100vw;
     background-color: bisque;
 }
 
@@ -33,4 +32,8 @@ body {
 
 .current-page{
     background-color: blueviolet;
+}
+
+.title{
+    display: flex;
 }
