@@ -1,1 +1,7 @@
-alert("this is a test")
+import './style.css';
+import load from './modules/pageLoad'
+
+
+
+load();
+
