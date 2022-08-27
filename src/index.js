@@ -5,15 +5,12 @@ import loadHome from './pages/homePage';
 import loadMenu from './pages/menuPage';
 import loadContact from './pages/contactPage'
 import removePage from './functions/removePage'
-import Pizza from './imgs/pizza.jpg';
+
 
 createNav();
 loadHome();
 
-const main = document.getElementById('main')
-const myPizza = new Image();
-myPizza.src = Pizza;
-main.appendChild(myPizza);
+
 
 const home = document.getElementById('home')
 const menu = document.getElementById('menu')
