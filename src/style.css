@@ -55,11 +55,15 @@ body {
     font-size: 60px;
     font-weight: 800;
     color: white;
+    grid-column: 1/2;
 }
 
 .about-div{
+    /* display: grid;
+    grid-template-columns: 2fr 1fr;
+     */
     display: flex;
-    justify-content: center;
+    align-items: center;
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
@@ -71,8 +75,11 @@ body {
 
 .about {
     color: white;
+    grid-column: 1/2;
 }
 
 .chef{
-    background: url(./imgs/DALLE_chef.png);
+    grid-column: 2/3;
+    height: 300px;
+    margin-left: 10px;
 }

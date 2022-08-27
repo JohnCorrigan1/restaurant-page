@@ -1,3 +1,5 @@
+import Chef from "./../imgs/DALLE_chef.png"
+
 export default function loadHome(){
 
 const content = document.querySelector('.content')
@@ -20,8 +22,10 @@ about.classList.add('about')
 about.textContent = "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum"
 aboutDiv.appendChild(about)
 
-const chef = document.createElement('img')
-chef.src = './imgs/DALLE_chef.png'
+// const chef = document.createElement('img')
+const chef = new Image();
+// chef.src = './imgs/pizza_chef.jpg'
+chef.src = Chef;
 chef.classList.add('chef')
-content.appendChild(chef)
+aboutDiv.appendChild(chef)
 }
