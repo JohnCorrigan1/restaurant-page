@@ -19,4 +19,9 @@ const about = document.createElement('p')
 about.classList.add('about')
 about.textContent = "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum"
 aboutDiv.appendChild(about)
+
+const chef = document.createElement('img')
+chef.src = './imgs/DALLE_chef.png'
+chef.classList.add('chef')
+content.appendChild(chef)
 }

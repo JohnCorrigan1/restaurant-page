@@ -13,7 +13,6 @@ body {
     width: 100vw;
 }
 
-
 .nav{
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
@@ -21,8 +20,7 @@ body {
     padding: 20px;
     height: 5vh;
     max-width: 100vw;
-    background-color: black;
-    opacity: 70%;
+    background-color: rgba(0, 0, 0, 0.7);
 }
 
 .nav-button {
@@ -67,12 +65,14 @@ body {
     margin-left: auto;
     margin-top: 5vh;
     padding: 10px;
-    background-color: black;
-    opacity: 70%;
+    background-color: rgba(0, 0, 0, 0.7);
     font-weight: bold;
 }
 
 .about {
     color: white;
-    opacity: 100%;
+}
+
+.chef{
+    background: url(./imgs/DALLE_chef.png);
 }
