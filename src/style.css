@@ -65,12 +65,14 @@ body {
     width: fit-content;
     margin-right: auto;
     margin-left: auto;
-    color: white;
+    margin-top: 5vh;
+    padding: 10px;
     background-color: black;
     opacity: 70%;
     font-weight: bold;
 }
 
 .about {
+    color: white;
     opacity: 100%;
 }
