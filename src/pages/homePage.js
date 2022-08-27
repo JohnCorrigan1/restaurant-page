@@ -19,7 +19,7 @@ main.appendChild(aboutDiv)
 
 const about = document.createElement('p')
 about.classList.add('about')
-about.textContent = "Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsumLorem ipsum Lorem ipsum"
+about.textContent = "This image of the chef was created by DALL.E an AI that generates images from text prompts. That's why it looks so weird. The prompt for this image was 'professional chef happily making a large pizza in a fancy restaurant studio lighting'"
 aboutDiv.appendChild(about)
 
 // const chef = document.createElement('img')
