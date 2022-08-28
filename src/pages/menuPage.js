@@ -1,5 +1,3 @@
-import { first } from "lodash";
-
 export default function loadMenu(){
 
     const content = document.querySelector('.content')
@@ -14,7 +12,35 @@ export default function loadMenu(){
 
     let item = "Plain Cheese"
     let description = "This is just sauce and 4 different cheeses, mozzarella, cheddar, and two others"
-    gridContainer.appendChild(menuItem(item, description))       
+    gridContainer.appendChild(menuItem(item, description))
+    
+    item = "Pepperoni"
+    description = "The Cheese piza topped with premium pepperoni"
+    gridContainer.appendChild(menuItem(item, description))
+
+    item = "Meat Lovers"
+    description = "Cheese pizza topped with a generous amount of sausage, pepperoni, ham, and bacon"
+    gridContainer.appendChild(menuItem(item, description))
+
+    item = "Plain Cheese"
+    description = "This is just sauce and 4 different cheeses, mozzarella, cheddar, and two others"
+    gridContainer.appendChild(menuItem(item, description))
+
+    item = "Plain Cheese"
+    description = "This is just sauce and 4 different cheeses, mozzarella, cheddar, and two others"
+    gridContainer.appendChild(menuItem(item, description))
+    
+    item = "Plain Cheese"
+    description = "This is just sauce and 4 different cheeses, mozzarella, cheddar, and two others"
+    gridContainer.appendChild(menuItem(item, description))
+    
+    item = "Plain Cheese"
+    description = "This is just sauce and 4 different cheeses, mozzarella, cheddar, and two others"
+    gridContainer.appendChild(menuItem(item, description))
+    
+    item = "Plain Cheese"
+    description = "This is just sauce and 4 different cheeses, mozzarella, cheddar, and two others"
+    gridContainer.appendChild(menuItem(item, description))
 }
 
 
