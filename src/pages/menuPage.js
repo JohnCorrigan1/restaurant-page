@@ -8,11 +8,6 @@ export default function loadMenu(){
     main.setAttribute('id', 'main')
     content.appendChild(main);
     
-    const menuTitle = document.createElement('div')
-    menuTitle.classList.add('menu-title')
-    menuTitle.textContent = "Our Menu"
-    main.appendChild(menuTitle)
-
     const gridContainer = document.createElement('div')
     gridContainer.classList.add('grid-container')
     main.appendChild(gridContainer)

@@ -8,6 +8,11 @@ export default function createNav(){
     const pages = document.createElement('div')
     pages.classList.add('pages')
     nav.appendChild(pages)
+    
+    const title = document.createElement('div')
+    title.classList.add('title')
+    title.textContent = "MamaMia's PizzaRia"
+    nav.appendChild(title)
 
     const home = document.createElement('button')
     home.classList.add('nav-button')

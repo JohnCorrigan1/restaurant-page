@@ -8,10 +8,10 @@ const main = document.createElement('div')
 main.setAttribute('id', 'main')
 content.appendChild(main);
 
-const title = document.createElement('div')
-title.classList.add('title')
-title.textContent = "MamaMia's PizzaRia"
-main.appendChild(title)
+// const title = document.createElement('div')
+// title.classList.add('title')
+// title.textContent = "MamaMia's PizzaRia"
+// main.appendChild(title)
 
 const aboutDiv = document.createElement('div')
 aboutDiv.classList.add('about-div')
