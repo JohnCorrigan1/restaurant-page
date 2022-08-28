@@ -17,22 +17,23 @@ export default function loadMenu(){
     gridContainer.classList.add('grid-container')
     main.appendChild(gridContainer)
 
-    for(let i = 0; i < 10; i++){
-    gridContainer.appendChild(menuItem())
-    }
-    // for(i = 0; i < 10; i++){
-    //     const gridItem = document.createElement('div')
-    //     gridItem.classList.add('grid-item')
-    //     gridItem.textContent = "This is a test pls work"
-    //     gridContainer.appendChild('grid-item')
-    // }
-    // gridContainer.appendChild(menuItem())
-    }
+    let item = "Plain Cheese"
+    let description = "This is just sauce and 4 different cheeses, mozzarella, cheddar, and two others"
+    gridContainer.appendChild(menuItem(item, description))       
+}
 
 
-    function menuItem(){
+    function menuItem(item, description){
         const gridItem = document.createElement('div')
         gridItem.classList.add('menu-item')
-        gridItem.textContent = "This is a test"
+
+        const itemTitle = document.createElement('h2')
+        itemTitle.textContent = item
+        gridItem.appendChild(itemTitle)
+
+        const itemDescription = document.createElement('p')
+        itemDescription.textContent = description
+        gridItem.appendChild(itemDescription)
+
         return gridItem
     }
