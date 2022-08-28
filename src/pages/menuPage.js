@@ -4,6 +4,8 @@ import MeatLovers from './../imgs/meatLovers.jpg'
 import Veggie from './../imgs/veggie.jpeg'
 import Hawaiian from './../imgs/hawaiian.jpeg'
 import Supreme from './../imgs/supreme.jpeg'
+import Variety from './../imgs/variety.jpeg'
+
 export default function loadMenu(){
 
     const content = document.querySelector('.content')
@@ -29,23 +31,23 @@ export default function loadMenu(){
     gridContainer.appendChild(menuItem(item, description))
 
     item = "Veggie"
-    description = "This is just sauce and 4 different cheeses, mozzarella, cheddar, and two others"
+    description = "Cheese pizza topped with peppers, muchrooms, olives, tomatoes, and spices"
     gridContainer.appendChild(menuItem(item, description))
 
     item = "Hawaiian"
-    description = "This is just sauce and 4 different cheeses, mozzarella, cheddar, and two others"
+    description = "Cheese pizza topped with pineapple and ham. Don't knock it til you try it"
     gridContainer.appendChild(menuItem(item, description))
     
     item = "Supreme"
     description = "Cheese pizza topped with pepperoni, peppers, onions, and tomatoes"
     gridContainer.appendChild(menuItem(item, description))
     
-    item = "Plain Cheese"
-    description = "This is just sauce and 4 different cheeses, mozzarella, cheddar, and two others"
+    item = "Variety"
+    description = "8 different style pizzas in one"
     gridContainer.appendChild(menuItem(item, description))
     
-    item = "Plain Cheese"
-    description = "This is just sauce and 4 different cheeses, mozzarella, cheddar, and two others"
+    item = "Build your own"
+    description = "Any way you want. If we have the ingredients we will make it"
     gridContainer.appendChild(menuItem(item, description))
 }
 
@@ -73,7 +75,7 @@ function menuItem(item, description){
 function createImage(item){
     const itemImage = new Image();
 
-    if(item === 'Plain Cheese'){
+    if(item === 'Plain Cheese' || item === 'Build your own'){
         itemImage.src = Cheese
     }
 
@@ -95,6 +97,9 @@ function createImage(item){
 
     else if(item === 'Supreme'){
         itemImage.src = Supreme
+    }
+    else{
+        itemImage.src = Variety
     }
 
     // else if(item ===)
