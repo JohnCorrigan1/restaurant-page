@@ -5,11 +5,11 @@ import loadHome from './pages/homePage';
 import loadMenu from './pages/menuPage';
 import loadContact from './pages/contactPage'
 import removePage from './functions/removePage'
-
+import createFooter from './functions/createFooter'
 
 createNav();
 loadHome();
-
+createFooter();
 
 
 const home = document.getElementById('home')

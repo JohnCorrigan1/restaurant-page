@@ -1,13 +1,21 @@
+html{
+    height: 100%;
+    max-width: 100vw;
+}
+
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 0;
     background: url('./imgs/pizza2.jpg') no-repeat;
     background-size: auto;
     background-attachment: fixed;
+    min-height: 100%;
 }
 
 .content {
    text-align: center; 
-   position: relative;
 }
 
 .myPizza {
@@ -77,9 +85,7 @@ body {
     align-items: center;
     max-width: 70vw;
     width: fit-content;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 10vh;
+    margin: 10vh auto 0 auto;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 5px 5px 5px -2px;
@@ -133,6 +139,33 @@ body {
     width: 200px;
 }
 
+footer{
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.footerP{
+    margin-right: 10px;
+}
+
+.github-logo:hover{
+    animation: roll 3s;
+    transform: rotate(720deg) ;
+}
+
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(720deg)
+    }
+}
+
 @media (max-width: 800px){
    
     .title{
@@ -147,6 +180,5 @@ body {
     }
     .grid-container{
         max-width: 100vw;
-        
     }
 }
